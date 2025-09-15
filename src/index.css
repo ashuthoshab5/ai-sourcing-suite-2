@@ -2,41 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ProcureAI Enterprise Design System - Professional procurement platform colors and styles */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Enterprise Background System */
+    --background: 248 250 252; /* slate-50 */
+    --foreground: 15 23 42; /* slate-800 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card and Surface System */
+    --card: 255 255 255; /* white */
+    --card-foreground: 15 23 42; /* slate-800 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover System */
+    --popover: 255 255 255; /* white */
+    --popover-foreground: 15 23 42; /* slate-800 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Brand System - Professional Blue */
+    --primary: 219 78% 55%; /* blue-500 */
+    --primary-foreground: 248 250 252; /* slate-50 */
+    --primary-glow: 219 100% 65%; /* lighter blue for effects */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary System - Neutral Professional */
+    --secondary: 241 245 249; /* slate-100 */
+    --secondary-foreground: 51 65 85; /* slate-600 */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted System */
+    --muted: 248 250 252; /* slate-50 */
+    --muted-foreground: 100 116 139; /* slate-500 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent System - Success Green */
+    --accent: 34 197 94; /* green-500 */
+    --accent-foreground: 255 255 255; /* white */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Warning System */
+    --warning: 251 191 36; /* amber-400 */
+    --warning-foreground: 15 23 42; /* slate-800 */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Destructive System */
+    --destructive: 239 68 68; /* red-500 */
+    --destructive-foreground: 248 250 252; /* slate-50 */
 
-    --radius: 0.5rem;
+    /* Border and Input System */
+    --border: 226 232 240; /* slate-200 */
+    --input: 241 245 249; /* slate-100 */
+    --ring: 219 78% 55%; /* blue-500 */
+
+    /* AI Agent Colors */
+    --ai-primary: 139 92 246; /* violet-500 */
+    --ai-secondary: 236 72 153; /* pink-500 */
+    --ai-accent: 14 165 233; /* sky-500 */
+
+    /* Status Colors */
+    --status-success: 34 197 94; /* green-500 */
+    --status-warning: 251 191 36; /* amber-400 */
+    --status-error: 239 68 68; /* red-500 */
+    --status-info: 59 130 246; /* blue-500 */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(219 78% 55%), hsl(219 100% 65%));
+    --gradient-ai: linear-gradient(135deg, hsl(139 92% 246%), hsl(236 72% 153%));
+    --gradient-success: linear-gradient(135deg, hsl(34 197% 94%), hsl(16 185% 129%));
+    --gradient-surface: linear-gradient(180deg, hsl(255 255 255), hsl(248 250 252));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+
+    /* Animation */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +96,38 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark Mode Enterprise System */
+    --background: 15 23 42; /* slate-800 */
+    --foreground: 248 250 252; /* slate-50 */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 30 41 59; /* slate-700 */
+    --card-foreground: 248 250 252; /* slate-50 */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 30 41 59; /* slate-700 */
+    --popover-foreground: 248 250 252; /* slate-50 */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 219 78% 55%; /* blue-500 */
+    --primary-foreground: 248 250 252; /* slate-50 */
+    --primary-glow: 219 100% 65%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 51 65 85; /* slate-600 */
+    --secondary-foreground: 248 250 252; /* slate-50 */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 51 65 85; /* slate-600 */
+    --muted-foreground: 148 163 184; /* slate-400 */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 34 197 94; /* green-500 */
+    --accent-foreground: 248 250 252; /* slate-50 */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --warning: 251 191 36; /* amber-400 */
+    --warning-foreground: 15 23 42; /* slate-800 */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive: 239 68 68; /* red-500 */
+    --destructive-foreground: 248 250 252; /* slate-50 */
+
+    --border: 51 65 85; /* slate-600 */
+    --input: 51 65 85; /* slate-600 */
+    --ring: 219 78% 55%; /* blue-500 */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +145,82 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Enterprise Button Variants */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-md transition-all duration-200;
+  }
+  
+  .btn-ai {
+    @apply bg-gradient-to-r from-ai-primary to-ai-secondary text-white hover:shadow-lg hover:scale-105 transition-all duration-200;
+  }
+  
+  .btn-success {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-200;
+  }
+
+  /* AI Chat Interface */
+  .chat-bubble-user {
+    @apply bg-primary text-primary-foreground rounded-2xl rounded-br-sm;
+  }
+  
+  .chat-bubble-ai {
+    @apply bg-card border border-border rounded-2xl rounded-bl-sm shadow-sm;
+  }
+
+  /* Data Cards */
+  .metric-card {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .metric-card-primary {
+    @apply bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20;
+  }
+  
+  .metric-card-success {
+    @apply bg-gradient-to-br from-accent/5 to-accent/10 border-accent/20;
+  }
+  
+  .metric-card-warning {
+    @apply bg-gradient-to-br from-warning/5 to-warning/10 border-warning/20;
+  }
+
+  /* Status Indicators */
+  .status-approved {
+    @apply bg-accent/10 text-accent border border-accent/20 rounded-full px-3 py-1 text-sm font-medium;
+  }
+  
+  .status-pending {
+    @apply bg-warning/10 text-warning border border-warning/20 rounded-full px-3 py-1 text-sm font-medium;
+  }
+  
+  .status-rejected {
+    @apply bg-destructive/10 text-destructive border border-destructive/20 rounded-full px-3 py-1 text-sm font-medium;
+  }
+
+  /* AI Agent Indicators */
+  .agent-active {
+    @apply bg-gradient-to-r from-ai-primary to-ai-secondary text-white rounded-lg px-3 py-2 shadow-sm animate-pulse;
+  }
+  
+  .agent-idle {
+    @apply bg-muted text-muted-foreground rounded-lg px-3 py-2;
+  }
+
+  /* Workflow Steps */
+  .workflow-step-active {
+    @apply bg-primary text-primary-foreground border-primary;
+  }
+  
+  .workflow-step-completed {
+    @apply bg-accent text-accent-foreground border-accent;
+  }
+  
+  .workflow-step-pending {
+    @apply bg-muted text-muted-foreground border-border;
   }
 }
