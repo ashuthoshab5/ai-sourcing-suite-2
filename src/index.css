@@ -2,75 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ProcureAI Enterprise Design System - Professional procurement platform colors and styles */
+/* Clean Design System - White background with orange, blue, black, white colors only */
 
 @layer base {
   :root {
-    /* Enterprise Background System */
-    --background: 248 250 252; /* slate-50 */
-    --foreground: 15 23 42; /* slate-800 */
+    /* Background System - White */
+    --background: 0 0% 100%; /* white */
+    --foreground: 0 0% 0%; /* black */
 
-    /* Card and Surface System */
-    --card: 255 255 255; /* white */
-    --card-foreground: 15 23 42; /* slate-800 */
+    /* Card and Surface System - White */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 0 0% 0%; /* black */
 
-    /* Popover System */
-    --popover: 255 255 255; /* white */
-    --popover-foreground: 15 23 42; /* slate-800 */
+    /* Popover System - White */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 0 0% 0%; /* black */
 
-    /* Primary Brand System - Professional Blue */
-    --primary: 219 78% 55%; /* blue-500 */
-    --primary-foreground: 248 250 252; /* slate-50 */
-    --primary-glow: 219 100% 65%; /* lighter blue for effects */
+    /* Primary System - Blue */
+    --primary: 217 91% 60%; /* blue */
+    --primary-foreground: 0 0% 100%; /* white */
+    --primary-glow: 217 91% 70%; /* lighter blue */
 
-    /* Secondary System - Neutral Professional */
-    --secondary: 241 245 249; /* slate-100 */
-    --secondary-foreground: 51 65 85; /* slate-600 */
+    /* Secondary System - Orange */
+    --secondary: 25 95% 53%; /* orange */
+    --secondary-foreground: 0 0% 100%; /* white */
 
-    /* Muted System */
-    --muted: 248 250 252; /* slate-50 */
-    --muted-foreground: 100 116 139; /* slate-500 */
+    /* Muted System - Light gray for subtle elements */
+    --muted: 0 0% 96%; /* very light gray */
+    --muted-foreground: 0 0% 45%; /* dark gray */
 
-    /* Accent System - Success Green */
-    --accent: 34 197 94; /* green-500 */
-    --accent-foreground: 255 255 255; /* white */
+    /* Accent System - Orange */
+    --accent: 25 95% 53%; /* orange */
+    --accent-foreground: 0 0% 100%; /* white */
 
-    /* Warning System */
-    --warning: 251 191 36; /* amber-400 */
-    --warning-foreground: 15 23 42; /* slate-800 */
+    /* Warning System - Orange */
+    --warning: 25 95% 53%; /* orange */
+    --warning-foreground: 0 0% 0%; /* black */
 
-    /* Destructive System */
-    --destructive: 239 68 68; /* red-500 */
-    --destructive-foreground: 248 250 252; /* slate-50 */
+    /* Destructive System - Keep orange for consistency */
+    --destructive: 25 95% 53%; /* orange */
+    --destructive-foreground: 0 0% 100%; /* white */
 
     /* Border and Input System */
-    --border: 226 232 240; /* slate-200 */
-    --input: 241 245 249; /* slate-100 */
-    --ring: 219 78% 55%; /* blue-500 */
+    --border: 0 0% 90%; /* light gray */
+    --input: 0 0% 98%; /* very light gray */
+    --ring: 217 91% 60%; /* blue */
 
-    /* AI Agent Colors */
-    --ai-primary: 139 92 246; /* violet-500 */
-    --ai-secondary: 236 72 153; /* pink-500 */
-    --ai-accent: 14 165 233; /* sky-500 */
+    /* AI Agent Colors - Blue variants */
+    --ai-primary: 217 91% 60%; /* blue */
+    --ai-secondary: 217 91% 70%; /* lighter blue */
+    --ai-accent: 217 91% 50%; /* darker blue */
 
     /* Status Colors */
-    --status-success: 34 197 94; /* green-500 */
-    --status-warning: 251 191 36; /* amber-400 */
-    --status-error: 239 68 68; /* red-500 */
-    --status-info: 59 130 246; /* blue-500 */
+    --status-success: 217 91% 60%; /* blue for success */
+    --status-warning: 25 95% 53%; /* orange for warning */
+    --status-error: 25 95% 53%; /* orange for error */
+    --status-info: 217 91% 60%; /* blue for info */
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(219 78% 55%), hsl(219 100% 65%));
-    --gradient-ai: linear-gradient(135deg, hsl(139 92% 246%), hsl(236 72% 153%));
-    --gradient-success: linear-gradient(135deg, hsl(34 197% 94%), hsl(16 185% 129%));
-    --gradient-surface: linear-gradient(180deg, hsl(255 255 255), hsl(248 250 252));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-ai: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 50%));
+    --gradient-success: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
 
     /* Animation */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,38 +96,38 @@
   }
 
   .dark {
-    /* Dark Mode Enterprise System */
-    --background: 15 23 42; /* slate-800 */
-    --foreground: 248 250 252; /* slate-50 */
+    /* Keep same colors for dark mode - maintain white bg */
+    --background: 0 0% 100%; /* white */
+    --foreground: 0 0% 0%; /* black */
 
-    --card: 30 41 59; /* slate-700 */
-    --card-foreground: 248 250 252; /* slate-50 */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 0 0% 0%; /* black */
 
-    --popover: 30 41 59; /* slate-700 */
-    --popover-foreground: 248 250 252; /* slate-50 */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 0 0% 0%; /* black */
 
-    --primary: 219 78% 55%; /* blue-500 */
-    --primary-foreground: 248 250 252; /* slate-50 */
-    --primary-glow: 219 100% 65%;
+    --primary: 217 91% 60%; /* blue */
+    --primary-foreground: 0 0% 100%; /* white */
+    --primary-glow: 217 91% 70%;
 
-    --secondary: 51 65 85; /* slate-600 */
-    --secondary-foreground: 248 250 252; /* slate-50 */
+    --secondary: 25 95% 53%; /* orange */
+    --secondary-foreground: 0 0% 100%; /* white */
 
-    --muted: 51 65 85; /* slate-600 */
-    --muted-foreground: 148 163 184; /* slate-400 */
+    --muted: 0 0% 96%; /* very light gray */
+    --muted-foreground: 0 0% 45%; /* dark gray */
 
-    --accent: 34 197 94; /* green-500 */
-    --accent-foreground: 248 250 252; /* slate-50 */
+    --accent: 25 95% 53%; /* orange */
+    --accent-foreground: 0 0% 100%; /* white */
 
-    --warning: 251 191 36; /* amber-400 */
-    --warning-foreground: 15 23 42; /* slate-800 */
+    --warning: 25 95% 53%; /* orange */
+    --warning-foreground: 0 0% 0%; /* black */
 
-    --destructive: 239 68 68; /* red-500 */
-    --destructive-foreground: 248 250 252; /* slate-50 */
+    --destructive: 25 95% 53%; /* orange */
+    --destructive-foreground: 0 0% 100%; /* white */
 
-    --border: 51 65 85; /* slate-600 */
-    --input: 51 65 85; /* slate-600 */
-    --ring: 219 78% 55%; /* blue-500 */
+    --border: 0 0% 90%; /* light gray */
+    --input: 0 0% 98%; /* very light gray */
+    --ring: 217 91% 60%; /* blue */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -150,17 +150,17 @@
 }
 
 @layer components {
-  /* Enterprise Button Variants */
+  /* Clean Button Variants */
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-md transition-all duration-200;
   }
   
   .btn-ai {
-    @apply bg-gradient-to-r from-ai-primary to-ai-secondary text-white hover:shadow-lg hover:scale-105 transition-all duration-200;
+    @apply bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg hover:scale-105 transition-all duration-200;
   }
   
   .btn-success {
-    @apply bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-200;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200;
   }
 
   /* AI Chat Interface */
@@ -174,37 +174,37 @@
 
   /* Data Cards */
   .metric-card {
-    @apply bg-card border border-border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+    @apply bg-card border border-border rounded-xl shadow-sm hover:shadow-md transition-all duration-200;
   }
   
   .metric-card-primary {
-    @apply bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20;
+    @apply bg-primary/5 border-primary/20;
   }
   
   .metric-card-success {
-    @apply bg-gradient-to-br from-accent/5 to-accent/10 border-accent/20;
+    @apply bg-primary/5 border-primary/20;
   }
   
   .metric-card-warning {
-    @apply bg-gradient-to-br from-warning/5 to-warning/10 border-warning/20;
+    @apply bg-accent/5 border-accent/20;
   }
 
   /* Status Indicators */
   .status-approved {
-    @apply bg-accent/10 text-accent border border-accent/20 rounded-full px-3 py-1 text-sm font-medium;
+    @apply bg-primary/10 text-primary border border-primary/20 rounded-full px-3 py-1 text-sm font-medium;
   }
   
   .status-pending {
-    @apply bg-warning/10 text-warning border border-warning/20 rounded-full px-3 py-1 text-sm font-medium;
+    @apply bg-accent/10 text-accent border border-accent/20 rounded-full px-3 py-1 text-sm font-medium;
   }
   
   .status-rejected {
-    @apply bg-destructive/10 text-destructive border border-destructive/20 rounded-full px-3 py-1 text-sm font-medium;
+    @apply bg-accent/10 text-accent border border-accent/20 rounded-full px-3 py-1 text-sm font-medium;
   }
 
   /* AI Agent Indicators */
   .agent-active {
-    @apply bg-gradient-to-r from-ai-primary to-ai-secondary text-white rounded-lg px-3 py-2 shadow-sm animate-pulse;
+    @apply bg-gradient-to-r from-primary to-accent text-white rounded-lg px-3 py-2 shadow-sm animate-pulse;
   }
   
   .agent-idle {
@@ -217,7 +217,7 @@
   }
   
   .workflow-step-completed {
-    @apply bg-accent text-accent-foreground border-accent;
+    @apply bg-primary text-primary-foreground border-primary;
   }
   
   .workflow-step-pending {
